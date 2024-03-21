@@ -1,9 +1,9 @@
-// "use server"
+"use server";
 
-// export async function createQuestion(params) {
-//   try {
+import { connectToDatabase } from "../mongoose";
 
-//   } catch (error) {
-
-//   }
-// }
+export async function createQuestion(params: any) {
+  try {
+    connectToDatabase();
+  } catch (error) {}
+}
